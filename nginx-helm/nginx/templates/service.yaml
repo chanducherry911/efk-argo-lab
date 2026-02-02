@@ -4,9 +4,10 @@ metadata:
   name: nginx-sample-app
   namespace: demo
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: nginx-sample-app
   ports:
     - port: 80
       targetPort: 80
+
