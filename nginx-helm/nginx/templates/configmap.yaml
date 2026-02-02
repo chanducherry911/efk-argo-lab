@@ -13,6 +13,6 @@ data:
     <body>
       <h1>EFK Sample Application</h1>
       <p>Deployed using Helm and Argo CD</p>
-      <p>Logs are shipped to Elasticsearch and visualized in Kibana</p>
+      <p>Logs are shipped to Elasticsearch and visualized in Kibana by abhi</p>
     </body>
     </html>
