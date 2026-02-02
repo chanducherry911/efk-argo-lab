@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: log-generator
+  namespace: demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: log-generator
+  template:
+    metadata:
+      labels:
+        app: log-generator
+    spec:
+      containers:
+      - name: app
+        image: busybox
+        command: ["/bin/sh"]
+        args:
+          - -c
+          - while true; do echo "EFK demo log $(date)"; sleep 5; done
+
